@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div className='min-h-screen min-w-screen bg-white flex-col'>
       <NavBar/>
-      <div className='flex px-20 pt-20 items-center space-x-14'>
+      <div className='flex pt-20 items-center space-x-14 px-20'>
 
         <div className='flex-col w-9xl'>
           <h1 className='text-gray-600 pb-1'>Turn Ideas into Reality.</h1>

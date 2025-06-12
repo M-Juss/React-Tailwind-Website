@@ -15,7 +15,7 @@ const business = [...pro, "Custom Branding Options", "Monthly Bulk Deliveries", 
     <div className='min-h-screen min-w-screen bg-white flex-col'>
       <NavBar/>
 
-      <div className='pt-32 pb-14 px-20'>
+      <div className='pt-44 pb-14 px-20'>
         <h1 className='text-center text-5xl font-bold pb-3.5'>Pricing</h1>
         <h2 className=' text-center text-md'>Our pricing is refreshing just like MintZip. Not too cheap, not too fancy—just the perfect fresh deal.</h2>
       </div>
