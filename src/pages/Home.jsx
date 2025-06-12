@@ -1,5 +1,6 @@
 import React from 'react'
 import NavBar from '../components/NavBar'
+import Footer from '../components/Footer'
 
 const Home = () => {
   return (
@@ -21,7 +22,7 @@ const Home = () => {
             <img src='src\image\london.png' className='h-130 w-500'></img>
         </div>
       </div>
-
+    <Footer/>
     </div>
   )
 }
