@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const NavBar = () => {
   return (
     <div className='border-b-2 border-b-gray-100 h-18 w-screen flex px-20 items-center space-x-3.5 justify-between'>
-          <img src="src\image\mainLogo.png" alt="MintZip-Logo" className='h-26' />
+          <img src=".\image\mainLogo.png" alt="MintZip-Logo" className='h-26' />
           <nav>
             <ul className='flex space-x-14 justify-between text-gray-600 font-semibold'>
               <li className=' hover:text-blue-600'><Link to="/">Home</Link></li>

@@ -9,7 +9,7 @@ const GetStarted = () => {
             <button className='py-2 px-4 bg-blue-500 rounded-2xl text-white'> Sign up now</button>
         </div>
         <div className=''>
-            <img src="src\image\mainLogo.png" alt="MintZip-Logo" className='size-60' />
+            <img src=".\image\mainLogo.png" alt="MintZip-Logo" className='size-60' />
         </div>
     </div>
   )

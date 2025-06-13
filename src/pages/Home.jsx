@@ -20,7 +20,7 @@ const Home = () => {
         </div>
 
         <div>
-            <img src='src\image\MintZip-Design.png' className='h-140 w-700'></img>
+            <img src='.\image\MintZip-Design.png' className='h-140 w-700'></img>
         </div>
       </div>
 

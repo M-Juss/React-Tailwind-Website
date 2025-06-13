@@ -10,7 +10,7 @@ const Contact = () => {
 
       <div className='flex space-x-30 h-fit'>
         <div>
-          <img src="src\image\MintZip-Design.png" alt="" className='size-170 w-200' />
+          <img src=".\image\MintZip-Design.png" alt="" className='size-170 w-200' />
         </div>
         <div className='flex-col my-auto'>
           <h1 className='font-semibold text-4xl pb-9'>Contact Us</h1>
