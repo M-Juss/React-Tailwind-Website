@@ -47,12 +47,12 @@ const About = () => {
     <div className='flex px-20 justify-center'>
       <div className='flex px-20 pt-5'>
         <div className='flex-col w-40'>
-          <img src="src\image\Front-End.jpg" alt="Front-End-image" className='h-28 mx-auto '/>
+          <img src="public\image\Front-End.jpg" alt="Front-End-image" className='h-28 mx-auto '/>
           <h1 className='text-center'>Front-end Developer</h1>
         </div>
 
         <div className='flex-col w-40'>
-          <img src="src\image\Back-End.jpg" alt="Front-End  -image" className='h-28 mx-auto '/>
+          <img src="public\image\Back-End.jpg" alt="Front-End  -image" className='h-28 mx-auto '/>
           <h1 className='text-center'>Back-end Developer</h1>
         </div>
     </div>
