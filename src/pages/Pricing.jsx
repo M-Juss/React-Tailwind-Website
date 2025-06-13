@@ -2,6 +2,7 @@ import React from 'react'
 import NavBar from '../components/NavBar'
 import { FaCircleCheck } from "react-icons/fa6";
 import Footer from '../components/Footer';
+import GetStarted from '../components/GetStarted';
 
 const Pricing = () => {
 
@@ -128,6 +129,7 @@ const business = [...pro, "Custom Branding Options", "Monthly Bulk Deliveries", 
         </div>
       </div>
       </div>
+      <GetStarted />
       <Footer />
     </div>
     
