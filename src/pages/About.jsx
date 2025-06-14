@@ -7,7 +7,7 @@ const About = () => {
     <div className='bg-white min-h-screen min-w-screen flex-col'>
       <NavBar/>
 
-     <div className='pt-44 pb-32 px-20'>
+     <div className='pt-30 pb-32 px-20'>
         <h1 className='text-center text-5xl font-bold pb-3.5'>About Us</h1>
         <h2 className=' text-center text-md px-52'>At MintZip, we believe that freshness isn’t just a feeling—it’s a lifestyle. Born out of the desire to combine hydration with instant oral freshness, we created a product that’s convenient, natural, and confidence-boosting.</h2>
         <img src=".\image\mainLogo.png" alt="MintZip-Logo" className='h-96 mx-auto px-96 mb-20'/>
