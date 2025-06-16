@@ -82,6 +82,30 @@ const Home = () => {
     </div>
     </div>
 
+    <div className='flex justify-between py-5 rounded-3xl shadow-2xl mt-25 mx-50'>
+
+      <div className='flex-col w-fit  pl-20 flex-3/4 '>
+        <img src="public\image\mainLogo.png" alt="Main-logo" className='size-80 relative left-20' />
+        <h1 className='font-semibold text-3xl relative bottom-15 w-90'>How to join the MintZip community</h1>
+        <h2 className='w-130 relative bottom-8'>Just 3 simple steps to refresh your lifestyle and enjoy MintZip benefits.</h2>
+        <button className='py-2 mb-5 px-4 bg-blue-500 rounded-xl text-white'> Sign up now</button>
+      </div>
+
+      <div className='flex-col w-fit pr-20 flex-1/12'> 
+        <h1 className='font-semibold text-2xl pb-4 pt-9'>Step 1</h1>
+        <h2 className='text-sm text-gray-600 pb-7 border-b-black border-b-1 w-100'>Send us a message or visit one of our partner stores to learn how MintZip fits into your daily routine.</h2>
+        
+        
+        <h1 className='font-semibold text-2xl pb-4 pt-7'>Step 2</h1>
+        <h2 className='text-sm text-gray-600 pb-7 border-b-black border-b-1 w-100'>Our team will recommend the best MintZip pack for your lifestyle — from single-use freshness to on-the-go hydration.</h2>
+
+        <h1 className='font-semibold text-2xl pb-4 pt-7'>Step 3</h1>
+        <h2 className='text-sm text-gray-600 pb-7 w-100'>Poof! You’re ready to stay fresh, confident, and cool with MintZip — anytime, anywhere.</h2>
+
+      </div>
+
+    </div>
+
     <GetStarted />
     <Footer/>
     </div>
