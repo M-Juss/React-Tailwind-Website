@@ -53,7 +53,7 @@ const About = () => {
 
         <div className='flex-col w-40'>
           <img src=".\image\Back-End.jpg" alt="Back-End-image" className='h-28 mx-auto '/>
-          <h1 className='text-center'>Back-end Developer</h1>
+          <h1 className='text-center'>Back-end Developer Hello</h1>
         </div>
     </div>
     </div>
