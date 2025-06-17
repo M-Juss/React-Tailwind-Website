@@ -84,15 +84,15 @@ const business = [...pro, "Custom Branding Options", "Monthly Bulk Deliveries", 
       <div className='px-20 h-fit'>
       <h1 className='pt-8 text-2xl font-semibold'>Compare Features</h1>
 
-      <div className='grid grid-cols-3 pb-6'>
+      <div className='flex w-full space-x-100'>
         <h1 className='pt-8 text-2xl font-semibold'>Basic</h1>
-        <h1 className='pt-8 text-2xl font-semibold'>Pro</h1>
+        <h1 className='pt-8 text-2xl font-semibold pr-28'>Pro</h1>
         <h1 className='pt-8 text-2xl font-semibold'>Business</h1>
       </div>
 
       <div className=' border-b-black border-b-1'></div>
 
-      <div className='flex w-fit space-x-32'>
+      <div className='flex w-full justify-between'>
         <div className='flex-col pt-3'>
         {basic.map((item,index) => {
           return(
