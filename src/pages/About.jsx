@@ -4,64 +4,75 @@ import Footer from '../components/Footer';
 
 const About = () => {
   return (
-    <div className='bg-white min-h-screen min-w-screen flex-col'>
-      <NavBar/>
+    <div className='bg-white min-h-screen flex flex-col'>
+      <NavBar />
 
-     <div className='pt-30 pb-32 px-20'>
-        <h1 className='text-center text-5xl font-bold pb-3.5'>About Us</h1>
-        <h2 className=' text-center text-md px-52'>At MintZip, we believe that freshness isn’t just a feeling—it’s a lifestyle. Born out of the desire to combine hydration with instant oral freshness, we created a product that’s convenient, natural, and confidence-boosting.</h2>
-        <img src=".\image\mainLogo.png" alt="MintZip-Logo" className='h-96 mx-auto px-96 mb-20'/>
+      {/* About Section */}
+      <div className='pt-20 pb-16 px-6 md:px-20'>
+        <h1 className='text-center text-4xl md:text-5xl font-bold pb-4'>About Us</h1>
+        <p className='text-center text-sm md:text-base max-w-4xl mx-auto pb-10'>
+          At MintZip, we believe that freshness isn’t just a feeling—it’s a lifestyle. Born out of the desire to combine hydration with instant oral freshness, we created a product that’s convenient, natural, and confidence-boosting.
+        </p>
+        <img
+          src="/image/mainLogo.png"
+          alt="MintZip Logo"
+          className='h-auto max-h-80 mx-auto mb-16'
+        />
 
-        <h1 className='text-center text-5xl font-bold pb-3.5'>Our Mission</h1>
-        <h2 className=' text-center text-md px-52'>At MintZip, our mission is to empower people to feel confident, refreshed, and ready—anytime, anywhere. We aim to revolutionize the way freshness is experienced by combining hydration and breath care in one smart, natural solution. Through innovation, quality ingredients, and thoughtful design, we strive to make freshness accessible, convenient, and always on-the-go.</h2>
+        {/* Mission Section */}
+        <h1 className='text-center text-4xl md:text-5xl font-bold pb-4'>Our Mission</h1>
+        <p className='text-center text-sm md:text-base max-w-4xl mx-auto'>
+          At MintZip, our mission is to empower people to feel confident, refreshed, and ready—anytime, anywhere. We aim to revolutionize the way freshness is experienced by combining hydration and breath care in one smart, natural solution. Through innovation, quality ingredients, and thoughtful design, we strive to make freshness accessible, convenient, and always on-the-go.
+        </p>
       </div>
 
-      <div className='flex px-60 justify-center h-fit space-x-100'>
-        <h1 className='text-5xl font-semibold w-3 pt-16'>Breathe Fresh. Sip Smart. Live Confident.</h1>
-        <img src=".\image\MintZip-Bottle.jpg" alt="MinzZip-bottle" className='h-96' />
+      {/* Tagline Section */}
+      <div className='flex flex-col-reverse lg:flex-row items-center justify-center gap-15 px-6 md:px-20 py-16'>
+        <h1 className='text-3xl md:text-4xl font-semibold text-center lg:text-left max-w-4xl'>
+          Breathe Fresh. Sip Smart. Live Confident.
+        </h1>
+        <img
+          src="/image/MintZip-Bottle.jpg"
+          alt="MintZip bottle"
+          className='h-auto max-h-96 object-contain'
+        />
       </div>
 
-      <div className='pt-44 pb-10 px-20'>
-        <h1 className='text-center text-5xl font-bold pb-3.5'>Team</h1>
-        <h2 className=' text-center text-md px-52'>Meet the people behind our magical product</h2>
+      {/* Team Section */}
+      <div className='pt-24 pb-10 px-6 md:px-20'>
+        <h1 className='text-center text-4xl md:text-5xl font-bold pb-3.5'>Team</h1>
+        <p className='text-center text-sm md:text-base max-w-2xl mx-auto'>
+          Meet the people behind our magical product
+        </p>
       </div>
 
-    <div className='flex px-20 justify-center'>
-      <div className='flex-col w-40'>
-        <img src=".\image\Ceo.jpg" alt="Ceo-image" className='h-28 mx-auto '/>
-        <h1 className='text-center'>Chief Executive Officer</h1>
-      </div>
-
-      <div className='flex-col w-40'>
-        <img src=".\image\Sr-Dev.jpg" alt="Sr.Dev-image" className='h-28 mx-auto '/>
-        <h1 className='text-center'>Senior Developer</h1>
-      </div>
-
-      <div className='flex-col w-40'>
-        <img src=".\image\QaTester.jpg" alt="Sr.Dev-image" className='h-28 mx-auto '/>
-        <h1 className='text-center'>QA Tester</h1>
-      </div>
-
-    </div>
-
-    <div className='flex px-20 justify-center'>
-      <div className='flex px-20 pt-5'>
-        <div className='flex-col w-40'>
-          <img src=".\image\Front-End.jpg" alt="Front-End-image" className='h-28 mx-auto '/>
-          <h1 className='text-center'>Front-end Developer</h1>
+      {/* Team Grid */}
+      <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 px-6 md:px-20 pb-24 text-center'>
+        <div>
+          <img src="/image/Ceo.jpg" alt="CEO" className='h-28 mx-auto mb-2 rounded-full object-cover' />
+          <h2 className='text-sm font-medium'>Chief Executive Officer</h2>
         </div>
-
-        <div className='flex-col w-40'>
-          <img src=".\image\Back-End.jpg" alt="Back-End-image" className='h-28 mx-auto '/>
-          <h1 className='text-center'>Back-end Developer</h1>
+        <div>
+          <img src="/image/Sr-Dev.jpg" alt="Senior Developer" className='h-28 mx-auto mb-2 rounded-full object-cover' />
+          <h2 className='text-sm font-medium'>Senior Developer</h2>
         </div>
-    </div>
-    </div>
+        <div>
+          <img src="/image/QaTester.jpg" alt="QA Tester" className='h-28 mx-auto mb-2 rounded-full object-cover' />
+          <h2 className='text-sm font-medium'>QA Tester</h2>
+        </div>
+        <div>
+          <img src="/image/Front-End.jpg" alt="Front-end" className='h-28 mx-auto mb-2 rounded-full object-cover' />
+          <h2 className='text-sm font-medium'>Front-end Developer</h2>
+        </div>
+        <div>
+          <img src="/image/Back-End.jpg" alt="Back-end" className='h-28 mx-auto mb-2 rounded-full object-cover' />
+          <h2 className='text-sm font-medium'>Back-end Developer</h2>
+        </div>
+      </div>
 
-    <Footer />
+      <Footer />
     </div>
-    
-  )
-}
+  );
+};
 
-export default About
+export default About;

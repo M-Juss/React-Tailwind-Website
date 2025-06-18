@@ -8,7 +8,7 @@ const Contact = () => {
     <div className='flex-col bg-white h-screen min-w-screen'>
       <NavBar/>
 
-      <div className='flex space-x-30 h-fit'>
+      <div className='flex md space-x-30 h-fit'>
         <div>
           <img src=".\image\MintZip-Design.png" alt="" className='size-170 w-200' />
         </div>

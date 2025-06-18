@@ -1,18 +1,23 @@
-import React from 'react'
+import React from 'react';
 
 const GetStarted = () => {
   return (
-    <div className='flex h-fit w-fit rounded-3xl shadow-2xl mt-24 mx-auto px-12 py-10 space-x-16'>
-        <div className='flex-col '>
-            <h1 className='font-semibold text-5xl w-100 pb-4'>Get Started with MintZip today</h1>
-            <h1 className='text-gray-600 pb-10'>Start optimizing your process today</h1>
-            <button className='py-2 px-4 bg-blue-500 rounded-2xl text-white'> Sign up now</button>
-        </div>
-        <div className=''>
-            <img src=".\image\mainLogo.png" alt="MintZip-Logo" className='size-60' />
-        </div>
-    </div>
-  )
-}
+    <div className="flex flex-col md:flex-row items-center justify-between rounded-3xl shadow-2xl mt-24 mx-auto px-6 md:px-12 py-10 space-y-10 md:space-y-0 md:space-x-16 max-w-6xl bg-white">
+      {/* Text Section */}
+      <div className="flex flex-col text-center md:text-left">
+        <h1 className="font-semibold text-3xl sm:text-4xl md:text-5xl w-full pb-4">Get Started with MintZip today</h1>
+        <p className="text-gray-600 pb-8">Start optimizing your process today</p>
+        <button className="py-2 px-6 bg-blue-500 rounded-2xl text-white hover:bg-blue-600 transition duration-300">
+          Sign up now
+        </button>
+      </div>
 
-export default GetStarted
+      {/* Image Section */}
+      <div className="flex justify-center">
+        <img src="./image/mainLogo.png" alt="MintZip-Logo" className="w-40 sm:w-48 md:w-60" />
+      </div>
+    </div>
+  );
+};
+
+export default GetStarted;
