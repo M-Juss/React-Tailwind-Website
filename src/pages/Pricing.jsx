@@ -73,15 +73,45 @@ const Pricing = () => {
 
         {/* Plan Headers */}
         <div className='grid grid-cols-1 md:grid-cols-3 gap-4 text-center font-semibold text-xl'>
-          <h1>Basic</h1>
-          <h1>Pro</h1>
-          <h1>Business</h1>
+          <div>
+            <h1 className='flex'>Basic</h1>
+            <div className='border-b my-4' />
+            {basic.map((item, index) => (
+                <div className='flex items-start gap-2 py-2 text-sm' key={index}>
+                  <FaCircleCheck color='blue' size={20} />
+                  <span>{item}</span>
+                </div>
+              ))}
+          </div>
+          
+          <div>
+            <h1 className='flex'>Pro</h1>
+            <div className='border-b my-4' />
+            {pro.map((item, index) => (
+                <div className='flex items-start gap-2 py-2 text-sm' key={index}>
+                  <FaCircleCheck color='blue' size={20} />
+                  <span>{item}</span>
+                </div>
+              ))}
+          </div>
+
+          <div>
+            <h1 className='flex'>Business</h1>
+            <div className='border-b my-4' />
+            {business.map((item, index) => (
+                <div className='flex items-start gap-2 py-2 text-sm' key={index}>
+                  <FaCircleCheck color='blue' size={20} />
+                  <span>{item}</span>
+                </div>
+              ))}
+          </div>
+
         </div>
 
-        <div className='border-b my-4' />
+        
 
-        {/* Features List */}
-        <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
+        
+        {/* <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
           {[basic, pro, business].map((plan, i) => (
             <div className='pt-3' key={i}>
               {plan.map((item, index) => (
@@ -92,7 +122,7 @@ const Pricing = () => {
               ))}
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
 
       <GetStarted />
