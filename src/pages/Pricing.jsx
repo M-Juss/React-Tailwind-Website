@@ -1,6 +1,7 @@
 import React from 'react';
 import NavBar from '../components/NavBar';
 import { FaCircleCheck } from "react-icons/fa6";
+import { IoIosArrowDown } from "react-icons/io";
 import Footer from '../components/Footer';
 import GetStarted from '../components/GetStarted';
 
@@ -123,6 +124,36 @@ const Pricing = () => {
             </div>
           ))}
         </div> */}
+      </div>
+
+      {/*Frequently Asked*/}
+      <div className='flex flex-col justify-center align-center items-center pt-25 font-semibold'>
+        <h1 className='flex text-center text-4xl font-semibold justify-center pb-10'>Frequently asked questions</h1>
+
+        <div className='flex w-100 justify-between border-b-gray-400 h-9 border-b-1 mb-2'>
+            <h2>How does this work? </h2>
+            <IoIosArrowDown />
+        </div>
+        <div className='flex w-100 justify-between border-b-gray-400 h-9 border-b-1 mb-2 pb-2'>
+            <h2>What are the benefits </h2>
+            <IoIosArrowDown />
+        </div>
+        <div className='flex w-100 justify-between border-b-gray-400 h-9 border-b-1 mb-2 pb-2'>
+            <h2>Is it difficult to use? </h2>
+            <IoIosArrowDown />
+        </div>
+        <div className='flex w-100 justify-between border-b-gray-400 h-9 border-b-1 mb-2 pb-2'>
+            <h2>Can I have custom pricing? </h2>
+            <IoIosArrowDown />
+        </div>
+        <div className='flex w-100 justify-between border-b-gray-400 h-9 border-b-1 mb-2 pb-2'>
+            <h2>Is there trial version available? </h2>
+            <IoIosArrowDown />
+        </div>
+        <div className='flex w-100 justify-between border-b-gray-400 h-9 border-b-1 mb-2 pb-2'>
+            <h2>Where do I sign up? </h2>
+            <IoIosArrowDown />
+        </div>
       </div>
 
       <GetStarted />
