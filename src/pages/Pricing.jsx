@@ -1,15 +1,29 @@
 import React from 'react';
 import NavBar from '../components/NavBar';
 import { FaCircleCheck } from "react-icons/fa6";
-import { IoIosArrowDown } from "react-icons/io";
+import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import Footer from '../components/Footer';
 import GetStarted from '../components/GetStarted';
+import { useState } from 'react';
 
 const Pricing = () => {
   const basic = ["Daily Freshness Dose", "Natural Mint Formula", "Pocket-Friendly Packaging"];
   const pro = [...basic, "Stronger, Longer-Lasting Freshness", "Dual-Use (Mouth + Water Enhancer)", "Exclusive Mint Variants"];
   const business = [...pro, "Custom Branding Options", "Monthly Bulk Deliveries", "Priority Customer Support"];
-  const questions = ["How does this work?", "What are the benefits?", "Is it difficult to use?", "Can I have custom pricing?", "Is there trial version available?", "Where do I sign up?"];
+  const faqs = [
+    "How does this work?",
+    "What are the benefits?",
+    "Is it difficult to use?",
+    "Can I have custom pricing?",
+    "Is there trial version available?",
+    "Where do I sign up?"
+  ];
+
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const toggleArrow = (index) => {
+    setOpenIndex(prev => (prev === index ? null : index));
+  };
 
   return (
     <div className='min-h-screen w-full bg-white flex flex-col'>
@@ -156,14 +170,20 @@ const Pricing = () => {
             <IoIosArrowDown />
         </div> */}
 
-        {questions.map((question, index) => {
-          return(          
-          <div className='flex w-100 justify-between border-b-gray-400 h-9 border-b-1 mb-2 pb-2' key={index}>
-            <h2>{question}</h2>
-            <IoIosArrowDown />
-        </div> );
-
-        })}
+{faqs.map((question, index) => (
+          <div
+            key={index}
+            onClick={() => toggleArrow(index)}
+            className='flex w-full max-w-2xl justify-between items-center border-b border-gray-400 py-4 cursor-pointer'
+          >
+            <h2 className='text-lg'>{question}</h2>
+            {openIndex === index ? (
+              <IoIosArrowUp className='transition-transform duration-200' />
+            ) : (
+              <IoIosArrowDown className='transition-transform duration-200' />
+            )}
+          </div>
+        ))}
       </div>
 
       <GetStarted />
