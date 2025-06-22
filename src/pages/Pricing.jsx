@@ -9,6 +9,7 @@ const Pricing = () => {
   const basic = ["Daily Freshness Dose", "Natural Mint Formula", "Pocket-Friendly Packaging"];
   const pro = [...basic, "Stronger, Longer-Lasting Freshness", "Dual-Use (Mouth + Water Enhancer)", "Exclusive Mint Variants"];
   const business = [...pro, "Custom Branding Options", "Monthly Bulk Deliveries", "Priority Customer Support"];
+  const questions = ["How does this work?", "What are the benefits?", "Is it difficult to use?", "Can I have custom pricing?", "Is there trial version available?", "Where do I sign up?"];
 
   return (
     <div className='min-h-screen w-full bg-white flex flex-col'>
@@ -130,7 +131,7 @@ const Pricing = () => {
       <div className='flex flex-col justify-center align-center items-center pt-25 font-semibold'>
         <h1 className='flex text-center text-4xl font-semibold justify-center pb-10'>Frequently asked questions</h1>
 
-        <div className='flex w-100 justify-between border-b-gray-400 h-9 border-b-1 mb-2'>
+        {/* <div className='flex w-100 justify-between border-b-gray-400 h-9 border-b-1 mb-2'>
             <h2>How does this work? </h2>
             <IoIosArrowDown />
         </div>
@@ -153,7 +154,16 @@ const Pricing = () => {
         <div className='flex w-100 justify-between border-b-gray-400 h-9 border-b-1 mb-2 pb-2'>
             <h2>Where do I sign up? </h2>
             <IoIosArrowDown />
-        </div>
+        </div> */}
+
+        {questions.map((question, index) => {
+          return(          
+          <div className='flex w-100 justify-between border-b-gray-400 h-9 border-b-1 mb-2 pb-2' key={index}>
+            <h2>{question}</h2>
+            <IoIosArrowDown />
+        </div> );
+
+        })}
       </div>
 
       <GetStarted />
