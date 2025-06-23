@@ -5,6 +5,23 @@ import GetStarted from '../components/GetStarted'
 import { FaStar } from "react-icons/fa"
 
 const Home = () => {
+  
+  const feedback =  [
+    {
+      quote: "MintZip is a game-changer! Our customers love the instant freshness and we’ve seen repeat sales skyrocket.",
+      name: "Kim Ernest Ciria",
+      title: "Marketing Lead, CoolMart"
+    }, {
+      quote: "Ever since we added MintZip to our stores, customers can’t get enough. It’s small, refreshing, and always in demand!",
+      name: "Joenel Sevellejo",
+      title: "Retail Manager, FreshStop"
+    }, {
+      quote: "I personally use MintZip every day. It’s now a staple in our office giveaways — our team absolutely loves it.",
+      name: "Nathanniel Joy Alvarez",
+      title: "HR Officer, ZenTech Solutions"
+    }
+  ]
+  
   return (
     <div className='min-h-screen bg-white flex flex-col'>
       <NavBar />
@@ -48,23 +65,7 @@ const Home = () => {
         <h2 className='text-center pb-10 text-sm md:text-base'>People love the MintZip experience — here’s what they have to say.</h2>
 
         <div className='flex flex-col lg:flex-row justify-center items-center gap-8'>
-          {[
-            {
-              quote: "MintZip is a game-changer! Our customers love the instant freshness and we’ve seen repeat sales skyrocket.",
-              name: "Kim Ernest Ciria",
-              title: "Marketing Lead, CoolMart"
-            },
-            {
-              quote: "Ever since we added MintZip to our stores, customers can’t get enough. It’s small, refreshing, and always in demand!",
-              name: "Joenel Sevellejo",
-              title: "Retail Manager, FreshStop"
-            },
-            {
-              quote: "I personally use MintZip every day. It’s now a staple in our office giveaways — our team absolutely loves it.",
-              name: "Nathanniel Joy Alvarez",
-              title: "HR Officer, ZenTech Solutions"
-            }
-          ].map((t, i) => (
+          {feedback.map((t, i) => (
             <div key={i} className='flex flex-col shadow-2xl rounded-3xl py-6 px-6 w-full max-w-sm'>
               <h2 className='text-center font-semibold pb-5 text-sm md:text-base'>"{t.quote}"</h2>
               <div className='flex justify-center space-x-1 pb-3'>

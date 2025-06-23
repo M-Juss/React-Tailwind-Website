@@ -11,19 +11,36 @@ const Pricing = () => {
   const pro = [...basic, "Stronger, Longer-Lasting Freshness", "Dual-Use (Mouth + Water Enhancer)", "Exclusive Mint Variants"];
   const business = [...pro, "Custom Branding Options", "Monthly Bulk Deliveries", "Priority Customer Support"];
   const faqs = [
-    "How does this work?",
-    "What are the benefits?",
-    "Is it difficult to use?",
-    "Can I have custom pricing?",
-    "Is there trial version available?",
-    "Where do I sign up?"
+    {
+      question: "How does this work?",
+      answer: "MintZip works by providing an instant dose of freshness through our specially formulated natural mint blend. Whether you use it as a mouth freshener or as a water enhancer, it’s designed for quick and easy use—just open, apply, and enjoy the refreshing experience in seconds."
+    }, {
+      question: "What are the benefits?",
+      answer: "MintZip offers a range of benefits including instant breath freshness, enhanced water flavor, and a clean feeling without the need for sugar or harsh chemicals. It's made from natural ingredients, fits easily in your pocket, and is perfect for on-the-go use. Some versions also offer dual use, meaning you can enjoy it both as a mouth freshener and a water enhancer."
+    }, {
+      question: "Is it difficult to use?",
+      answer: "Not at all. MintZip is designed to be user-friendly and convenient. All you have to do is open the container, spray or drop the product as needed—either directly into your mouth or into your water—and you’re done. It’s that quick and simple."
+    }, {
+      question: "Can I have custom pricing?",
+      answer: "Yes, we do offer custom pricing for bulk orders, businesses, and resellers. If you’re interested in purchasing larger quantities or partnering with us, feel free to reach out so we can discuss a pricing plan that works for you."
+    }, {
+      question: "Is there trial version available?",
+      answer: "We occasionally provide trial versions or sample packs during promotional periods. To stay updated on when free trials are available, we recommend subscribing to our newsletter or following us on social media where we announce all ongoing offers."
+    }, {
+      question: "Where do I sign up?",
+      answer: `You can sign up and place your order through our official website. Simply go to the homepage and click on the "Get Started" or "Order Now" button to begin your MintZip experience. The sign-up process is quick, and you’ll be enjoying your product in no time.`
+    },
   ];
 
-  const [openIndex, setOpenIndex] = useState(null);
+  const [accordionOpen, setAccordionOpen] = useState(false);
 
-  const toggleArrow = (index) => {
-    setOpenIndex(prev => (prev === index ? null : index));
-  };
+   const [openIndex, setOpenIndex] = useState(null);
+
+   const toggleArrow = (index) => {
+     setOpenIndex(prev => (prev === index ? null : index));
+   };
+
+
 
   return (
     <div className='min-h-screen w-full bg-white flex flex-col'>
@@ -123,66 +140,32 @@ const Pricing = () => {
           </div>
 
         </div>
-
-        
-
-        
-        {/* <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
-          {[basic, pro, business].map((plan, i) => (
-            <div className='pt-3' key={i}>
-              {plan.map((item, index) => (
-                <div className='flex items-start gap-2 py-2 text-sm' key={index}>
-                  <FaCircleCheck color='blue' size={20} />
-                  <span>{item}</span>
-                </div>
-              ))}
-            </div>
-          ))}
-        </div> */}
       </div>
 
       {/*Frequently Asked*/}
-      <div className='flex flex-col justify-center align-center items-center pt-25 font-semibold'>
+      <div className='flex flex-col justify-center align-center items-center pt-25 font-semibold sm:px-10'>
         <h1 className='flex text-center text-4xl font-semibold justify-center pb-10'>Frequently asked questions</h1>
 
-        {/* <div className='flex w-100 justify-between border-b-gray-400 h-9 border-b-1 mb-2'>
-            <h2>How does this work? </h2>
-            <IoIosArrowDown />
-        </div>
-        <div className='flex w-100 justify-between border-b-gray-400 h-9 border-b-1 mb-2 pb-2'>
-            <h2>What are the benefits </h2>
-            <IoIosArrowDown />
-        </div>
-        <div className='flex w-100 justify-between border-b-gray-400 h-9 border-b-1 mb-2 pb-2'>
-            <h2>Is it difficult to use? </h2>
-            <IoIosArrowDown />
-        </div>
-        <div className='flex w-100 justify-between border-b-gray-400 h-9 border-b-1 mb-2 pb-2'>
-            <h2>Can I have custom pricing? </h2>
-            <IoIosArrowDown />
-        </div>
-        <div className='flex w-100 justify-between border-b-gray-400 h-9 border-b-1 mb-2 pb-2'>
-            <h2>Is there trial version available? </h2>
-            <IoIosArrowDown />
-        </div>
-        <div className='flex w-100 justify-between border-b-gray-400 h-9 border-b-1 mb-2 pb-2'>
-            <h2>Where do I sign up? </h2>
-            <IoIosArrowDown />
-        </div> */}
-
-{faqs.map((question, index) => (
+    {faqs.map((faq, index) => (
+      <div className='flex-col w-full max-w-2xl'>
           <div
             key={index}
             onClick={() => toggleArrow(index)}
-            className='flex w-full max-w-2xl justify-between items-center border-b border-gray-400 py-4 cursor-pointer'
+            className='flex justify-between items-center py-4 cursor-pointer'
           >
-            <h2 className='text-lg'>{question}</h2>
-            {openIndex === index ? (
-              <IoIosArrowUp className='transition-transform duration-200' />
-            ) : (
-              <IoIosArrowDown className='transition-transform duration-200' />
-            )}
+            <span>{faq.question}</span>
+            <span>{openIndex === index? 
+              (<IoIosArrowUp className='transition-transform duration-200 ease'/>) :
+              (<IoIosArrowDown className='transition-transform duration-200'/>)}</span>
           </div>
+          <div className={`grid overflow-hidden text-justify text-gray-500 font-normal text-sm transition-all duration-300 ease-in-out ${
+          openIndex === index
+          ? 'grid-rows-[1fr] opacity-100'
+          : 'grid-rows-[0fr] opacity-0'
+          }`}>
+            <span className='overflow-hidden'>{faq.answer}</span>
+          </div>
+      </div>
         ))}
       </div>
 
