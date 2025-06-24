@@ -2,7 +2,7 @@ import React from 'react';
 
 const GetStarted = () => {
   return (
-    <div className="flex flex-col md:flex-row items-center justify-between rounded-3xl shadow-2xl mt-24 mx-auto px-6 md:px-12 py-10 space-y-10 md:space-y-0 md:space-x-16 max-w-6xl bg-white">
+    <div className="flex flex-col md:flex-row items-center justify-between rounded-3xl shadow-2xl mt-8 mx-auto px-6 md:px-12 py-10 space-y-10 md:space-y-0 md:space-x-16 max-w-6xl bg-white">
       {/* Text Section */}
       <div className="flex flex-col text-center md:text-left">
         <h1 className="font-semibold text-3xl sm:text-4xl md:text-5xl w-full pb-4">Get Started with MintZip today</h1>
