@@ -1,6 +1,7 @@
 import React from 'react';
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
+import TeamPicture from '../components/TeamPicture';
 
 const About = () => {
   return (
@@ -46,29 +47,7 @@ const About = () => {
         </p>
       </div>
 
-      {/* Team Grid */}
-      <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 px-6 md:px-20 pb-24 text-center'>
-        <div>
-          <img src="/image/Ceo.jpg" alt="CEO" className='h-28 mx-auto mb-2 rounded-full object-cover' />
-          <h2 className='text-sm font-medium'>Chief Executive Officer</h2>
-        </div>
-        <div>
-          <img src="/image/Sr-Dev.jpg" alt="Senior Developer" className='h-28 mx-auto mb-2 rounded-full object-cover' />
-          <h2 className='text-sm font-medium'>Senior Developer</h2>
-        </div>
-        <div>
-          <img src="/image/QaTester.jpg" alt="QA Tester" className='h-28 mx-auto mb-2 rounded-full object-cover' />
-          <h2 className='text-sm font-medium'>QA Tester</h2>
-        </div>
-        <div>
-          <img src="/image/Front-End.jpg" alt="Front-end" className='h-28 mx-auto mb-2 rounded-full object-cover' />
-          <h2 className='text-sm font-medium'>Front-end Developer</h2>
-        </div>
-        <div>
-          <img src="/image/Back-End.jpg" alt="Back-end" className='h-28 mx-auto mb-2 rounded-full object-cover' />
-          <h2 className='text-sm font-medium'>Back-end Developer</h2>
-        </div>
-      </div>
+      <TeamPicture/>
 
       <Footer />
     </div>
