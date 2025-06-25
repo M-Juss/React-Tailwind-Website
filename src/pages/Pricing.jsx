@@ -1,10 +1,9 @@
-import React from 'react';
-import NavBar from '../components/NavBar';
 import { FaCircleCheck } from "react-icons/fa6";
+import NavBar from '../components/layout/NavBar';
 
-import Footer from '../components/Footer';
-import GetStarted from '../components/GetStarted';
-import Accordion from '../components/Accordion';
+import Accordion from '../components/ui/Accordion';
+import Footer from '../components/layout/Footer';
+import GetStarted from '../components/layout/GetStarted';
 
 const Pricing = () => {
   const basic = ["Daily Freshness Dose", "Natural Mint Formula", "Pocket-Friendly Packaging"];

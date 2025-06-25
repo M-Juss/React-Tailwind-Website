@@ -1,7 +1,6 @@
-import React from 'react';
-import NavBar from '../components/NavBar';
-import Input from '../components/Input';
-import Footer from '../components/Footer';
+import Input from '../components/ui/Input';
+import Footer from '../components/layout/Footer';
+import NavBar from '../components/layout/NavBar';
 
 const Contact = () => {
   return (

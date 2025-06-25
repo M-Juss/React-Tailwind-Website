@@ -1,8 +1,7 @@
-import React from 'react'
-import NavBar from '../components/NavBar'
-import Footer from '../components/Footer'
-import GetStarted from '../components/GetStarted'
-import Testimonials from '../components/Testimonials'
+import Footer from '../components/layout/Footer'
+import GetStarted from '../components/layout/GetStarted'
+import NavBar from '../components/layout/NavBar'
+import Testimonials from '../components/ui/Testimonials'
 
 const Home = () => {
   
