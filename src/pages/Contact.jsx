@@ -32,6 +32,10 @@ const Contact = () => {
             <h2 className='text-sm font-semibold pb-2'>Message</h2>
             <Input placeholder="How can we get better?" />
           </div>
+
+          <div className='py-5'>
+            <button className='py-2 px-4 bg-blue-900 hover:bg-blue-600 rounded-lggit  text-white  '><a href='#'>Sumbit</a></button>
+          </div>
         </div>
       </div>
 

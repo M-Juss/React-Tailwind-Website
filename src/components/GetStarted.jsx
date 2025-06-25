@@ -7,7 +7,7 @@ const GetStarted = () => {
       <div className="flex flex-col text-center md:text-left">
         <h1 className="font-semibold text-3xl sm:text-4xl md:text-5xl w-full pb-4">Get Started with MintZip today</h1>
         <p className="text-gray-600 pb-8">Start optimizing your process today</p>
-        <button className="py-2 px-6 bg-blue-500 rounded-2xl text-white hover:bg-blue-600 transition duration-300">
+        <button className="py-2 px-6 bg-blue-900 max-w-40 mx-auto rounded-2xl text-white hover:bg-blue-600 transition duration-300">
           Sign up now
         </button>
       </div>

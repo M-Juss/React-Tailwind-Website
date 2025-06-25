@@ -40,7 +40,7 @@ const Pricing = () => {
         {/* Pro */}
         <div className='shadow-2xl rounded-2xl transition-transform duration-300 hover:scale-105 p-8 scale-105 md:scale-110'>
           <div className='flex justify-end'>
-            <span className='bg-blue-500 text-white text-xs font-semibold px-3 py-1 rounded-xl'>Most Popular</span>
+            <span className='bg-blue-900 hover:bg-blue-600 text-white text-xs font-semibold px-3 py-1 rounded-xl'>Most Popular</span>
           </div>
           <h1 className='font-semibold text-xl pt-2 pb-4'>Pro</h1>
           <div className='flex items-end'>
@@ -50,7 +50,7 @@ const Pricing = () => {
           </div>
           <p className='pt-5 pb-10 text-sm'>For regular users who want to stay fresh and confident all day</p>
           <div className='text-center'>
-            <button className='bg-blue-500 text-white py-2 px-5 text-sm font-semibold rounded-xl'>Get started with Pro</button>
+            <button className='bg-blue-900 hover:bg-blue-600 text-white py-2 px-5 text-sm font-semibold rounded-xl'>Get started with Pro</button>
           </div>
         </div>
 
