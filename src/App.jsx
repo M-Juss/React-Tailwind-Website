@@ -4,7 +4,7 @@ import Pricing from './pages/Pricing';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import ScrollToTop from './components/ScrollToTop';
+import ScrollToTop from './components/function/ScrollToTop';
 
 function App() {
 
