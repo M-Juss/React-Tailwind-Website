@@ -2,7 +2,7 @@ import React from 'react'
 
 const Join = () => {
   return (
-      <div className='flex flex-col lg:flex-row justify-between items-center gap-10 py-16 px-6 md:px-20'>
+      <div className='flex flex-col lg:flex-row justify-between items-center gap-10 py-16 px-6 md:px-20  rounded-xl shadow-2xl my-20' >
         
         <div className='flex flex-col items-center lg:items-start w-full lg:w-1/2'>
           <img src="/image/mainLogo.png" alt="Main Logo" className='w-48 mb-5' />
