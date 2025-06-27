@@ -33,7 +33,7 @@ const Contact = () => {
           </div>
 
           <div className='py-5'>
-            <button className='py-2 px-4 bg-blue-900 hover:bg-blue-600 rounded-lggit  text-white  '><a href='#'>Sumbit</a></button>
+            <button className='py-2 px-4 bg-blue-900 hover:bg-blue-600 rounded-lg text-white  '><a href='#'>Submit</a></button>
           </div>
         </div>
       </div>

@@ -6,6 +6,8 @@ import Contact from './pages/Contact';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ScrollToTop from './components/function/ScrollToTop';
 import SignUp from './pages/SignUp';
+import LogIn from './pages/LogIn';
+
 
 function App() {
 
@@ -18,6 +20,7 @@ function App() {
         <Route path="/about" element={<About/>}/>
         <Route path="/contact" element={<Contact/>} />
         <Route path="/signup" element={<SignUp/>}/>
+        <Route path="/login" element={<LogIn/>}/>
       </Routes>
     </Router>
   )

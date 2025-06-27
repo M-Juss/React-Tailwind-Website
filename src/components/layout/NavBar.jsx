@@ -21,7 +21,7 @@ const NavBar = () => {
 
       {/* Action buttons (Log in / Create Account) */}
       <div className='hidden lg:flex space-x-4 items-center'>
-        <span className='hover:text-blue-600 cursor-pointer'>Log In</span>
+          <Link to="/login"><span className='hover:text-blue-600'>Log In</span></Link>
         <button className='py-2 px-4 bg-blue-900 rounded-2xl text-white text-sm font-semibold hover:bg-blue-600 transition duration-300 transform hover:scale-105 shadow-md'>
           <Link to="/signup">Create an Account</Link>
         </button>
@@ -39,9 +39,9 @@ const NavBar = () => {
           <Link to="/pricing" className='hover:text-blue-600' onClick={() => setMenuOpen(false)}>Pricing</Link>
           <Link to="/about" className='hover:text-blue-600' onClick={() => setMenuOpen(false)}>About Us</Link>
           <Link to="/contact" className='hover:text-blue-600' onClick={() => setMenuOpen(false)}>Contact</Link>
-          <span className='hover:text-blue-600'>Log In</span>
+          <Link to="/login"><span className='hover:text-blue-600'>Log In</span></Link>
           <button className='py-2 px-4 bg-blue-900 rounded-2xl text-white text-sm font-semibold hover:bg-blue-600 transition duration-300 transform hover:scale-105 shadow-md'>
-            Create an Account
+            <Link to="/signup">Create an Account</Link>
           </button>
         </div>
       )}
