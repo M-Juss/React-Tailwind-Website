@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 
 const GetStarted = () => {
   return (
@@ -8,7 +9,7 @@ const GetStarted = () => {
         <h1 className="font-semibold text-3xl sm:text-4xl md:text-5xl w-full pb-4">Get Started with MintZip today</h1>
         <p className="text-gray-600 pb-8">Start optimizing your process today</p>
         <button className="py-2 px-6 bg-blue-900 max-w-40 mx-auto rounded-2xl text-white hover:bg-blue-600 transition duration-300">
-          Sign up now
+          <Link to="/signup">Sign up now</Link>
         </button>
       </div>
 

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Join = () => {
   return (
@@ -9,7 +10,7 @@ const Join = () => {
           <h1 className='font-semibold text-2xl md:text-3xl text-center lg:text-left mb-3'>How to join the MintZip community</h1>
           <p className='text-center lg:text-left mb-5'>Just 3 simple steps to refresh your lifestyle and enjoy MintZip benefits.</p>
           <button className='py-2 px-4 bg-blue-900  rounded-xl text-white font-semibold hover:bg-blue-600 transition'>
-            Sign up now
+            <Link to="/signup">Sign up now</Link>
           </button>
         </div>
 

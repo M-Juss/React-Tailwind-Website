@@ -23,7 +23,7 @@ const NavBar = () => {
       <div className='hidden lg:flex space-x-4 items-center'>
         <span className='hover:text-blue-600 cursor-pointer'>Log In</span>
         <button className='py-2 px-4 bg-blue-900 rounded-2xl text-white text-sm font-semibold hover:bg-blue-600 transition duration-300 transform hover:scale-105 shadow-md'>
-          Create an Account
+          <Link to="/signup">Create an Account</Link>
         </button>
       </div>
 

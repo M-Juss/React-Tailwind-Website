@@ -10,16 +10,16 @@ import SignUp from './pages/SignUp';
 function App() {
 
   return (
-    // <Router>
-    //   <ScrollToTop/>
-    //   <Routes>
-    //     <Route path="/" element={<Home />}/>
-    //     <Route path="/pricing" element={<Pricing />}/>
-    //     <Route path="/about" element={<About/>}/>
-    //     <Route path="/contact" element={<Contact/>} />
-    //   </Routes>
-    // </Router>
-    <SignUp/>
+    <Router>
+      <ScrollToTop/>
+      <Routes>
+        <Route path="/" element={<Home />}/>
+        <Route path="/pricing" element={<Pricing />}/>
+        <Route path="/about" element={<About/>}/>
+        <Route path="/contact" element={<Contact/>} />
+        <Route path="/signup" element={<SignUp/>}/>
+      </Routes>
+    </Router>
   )
 }
 
