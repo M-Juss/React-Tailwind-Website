@@ -11,7 +11,7 @@ const Pricing = () => {
   const business = [...pro, "Custom Branding Options", "Monthly Bulk Deliveries", "Priority Customer Support"];
 
   return (
-    <div className='min-h-screen w-full bg-white flex flex-col'>
+    <div className='min-h-screen w-full bg-white flex flex-col transition-all ease-in duration-200'>
       <NavBar />
 
       {/* Header */}

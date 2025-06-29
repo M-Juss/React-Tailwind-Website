@@ -4,7 +4,7 @@ import TeamPicture from '../components/ui/TeamPicture';
 
 const About = () => {
   return (
-    <div className='bg-white min-h-screen flex flex-col'>
+    <div className='bg-white min-h-screen flex flex-col transition-all ease-in duration-200'>
       <NavBar />
 
       {/* About Section */}

@@ -9,7 +9,7 @@ const SignUp = () => {
   const [showPassword, setShowPassword] = useState(false);
 
   return (
-    <div className='flex justify-center align-middle items-center h-screen max-w-screen bg-white'>
+    <div className='flex justify-center align-middle items-center h-screen max-w-screen bg-white transition-all ease-in duration-200'>
         <div className='flex flex-col px-15 py-8 rounded-2xl shadow-2xl'>
 
             <Link to="/">

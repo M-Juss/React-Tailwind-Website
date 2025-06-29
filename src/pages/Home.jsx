@@ -7,7 +7,7 @@ import Testimonials from '../components/ui/Testimonials'
 const Home = () => {
   
   return (
-    <div className='min-h-screen bg-white flex flex-col'>
+    <div className='min-h-screen bg-white flex flex-col transition-all ease-in duration-200'>
       <NavBar />
 
       {/* Hero Section */}

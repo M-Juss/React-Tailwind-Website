@@ -4,7 +4,7 @@ import NavBar from '../components/layout/NavBar';
 
 const Contact = () => {
   return (
-    <div className='flex flex-col min-h-screen bg-white'>
+    <div className='flex flex-col min-h-screen bg-white transition-all ease-in duration-200'>
       <NavBar />
 
       <div className='flex flex-col md:flex-row items-center md:items-start justify-center px-6 md:px-20 py-12 gap-10'>
