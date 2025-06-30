@@ -29,11 +29,11 @@ const Contact = () => {
 
           <div className='pt-4'>
             <h2 className='text-sm font-semibold pb-2'>Message</h2>
-            <Input placeholder="How can we get better?" />
+            <textarea className='px-3 py-1 outline-none focus:outline-none rounded-md shadow-md w-85' placeholder='How can we get better?' cols="40" rows="5"></textarea>
           </div>
 
           <div className='py-5'>
-            <button className='py-2 px-4 bg-blue-900 hover:bg-blue-600 rounded-lg text-white  '><a href='#'>Submit</a></button>
+            <button className='py-2 px-4 bg-blue-900 hover:bg-blue-600 rounded-lg text-white '><a href='#'>Submit</a></button>
           </div>
         </div>
       </div>
